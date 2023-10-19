@@ -1,0 +1,10 @@
+Private Sub btn_ola_Click()
+    If txt_nome.Text <> "" Then
+        MsgBox "Olá " & txt_nome.Text & ", Seja Bem vindo!", vbOKOnly, "Bem Vindo"
+        Me.lbl_saida.Caption = "Seja Bem vindo " & txt_nome.Text & "!"
+        Me.lbl_saida.BackColor = &HC0FFC0
+    Else:
+        Me.lbl_saida.Caption = ""
+        Me.lbl_saida.BackColor = &H8000000F
+    End If
+End Sub
